@@ -1,0 +1,135 @@
+:root{
+    --mainColor: rgb(52, 52, 238);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+label{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: #edecec;
+}
+
+.taskIcons{
+    font-size: 30px;
+    color: var(--mainColor);
+    border-radius: 4px;
+}
+/* ----------- */
+
+main{
+    width: max(400px, 30%);
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    background-color: #fbfbfb;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+h1{
+    padding-bottom: 30px;
+}
+
+#newtaskContiner{
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #e5e4e4;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list .listItems{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid #e5e4e4;
+    /* border-bottom-color: #ac1010; */
+}
+
+.item-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-nav label{
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.item-nav label{
+    margin-right: auto;
+}
+
+.item-nav #remove-btn{
+    margin-left: 5px;
+}
+
+.listItems input, .listItems label, #edit-btn, #remove-btn{
+    cursor: pointer;
+}
+
+/* ------------- */
+/* TaskInfo section */
+
+#taskInfo{
+   background-color: #f7f6f6;
+   border: 1.5px solid var(--mainColor);
+   border-radius: 5px;
+   padding: 5px;
+   margin-bottom: 20px;
+}
+
+#taskInfo label{
+    font-size: 17px;
+}
+
+.btn-section{
+    display: flex;
+    justify-content: center;
+}
+.btn-section button{
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+    padding: 2px 5px;
+    border: 2px solid var(--mainColor);
+    background-color:#ffff;
+    border-radius: 3px;
+}
+
+
+/* Effects */
+
+#newtaskContiner:hover{
+    border-color: var(--mainColor);
+    scale: 1.01;
+}
+
+#edit-btn:hover{
+    background-color: #edecec;
+}
+
+#remove-btn:hover{
+    background-color: #edecec;
+}
